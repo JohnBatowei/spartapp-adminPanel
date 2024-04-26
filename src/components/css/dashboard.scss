@@ -1,0 +1,62 @@
+.dashboard {
+  display: flex;
+  gap: .1em;
+  overflow: hidden;
+  // border: 1px solid red;
+  .main-field {
+    height: 100vh;
+    // border: 1px solid red;
+    // flex-basis: 70%;
+    width: 100%;
+    overflow: scroll;
+   
+    .footer {
+      position: sticky;
+      top: 0;
+      font-size: 0.9rem;
+      background: rgb(226, 226, 226);
+      width: 100%;
+      padding: 5px;
+      // text-align: center;
+      margin-bottom: 12px;
+      font-family: "Mulish";
+      display: flex;
+      place-content: space-around;
+      align-items: center;
+      z-index: 444;
+      .logout {
+        position: relative;
+        border: 1px solid whitesmoke;
+        padding: 8px 16px;
+        font-weight: 600;
+        border-radius: 3px;
+        &::before {
+          border-radius: 3px;
+          position: absolute;
+          content: "";
+          width: 0;
+          left: 0;
+          height: 100%;
+          background: rgba(255, 0, 0, 0.246);
+          top: 0;
+          transition: 0.5s ease-in-out;
+        }
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+          cursor: pointer;
+        }
+      }
+    }
+    .content-field {
+      overflow-y: scroll;
+      word-break: break-all;
+      padding: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.113);
+      border-radius: 10px;
+      // border: 1px solid red;
+      scrollbar-color: transparent transparent;
+    }
+  }
+}

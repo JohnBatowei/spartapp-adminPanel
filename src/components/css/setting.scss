@@ -1,0 +1,80 @@
+.Settings {
+  .switchOfSite {
+    h3 {
+      font-family: "Mulish";
+    }
+    .parent {
+      margin-top: 3em;
+      table {
+        // background-color: rgb(234, 234, 234);
+        // padding: 12px;
+        border-radius: 5px;
+        thead {
+            tr{
+              // background: steelblue;
+              th {
+                padding: 9px;
+                border-radius: 4px;
+                font-family: "Mulish";
+              }
+          }
+        }
+        tr {
+          // background-color: rgb(217, 173, 220);
+          // &:hover{
+          //     background-color: rgb(242, 217, 243);
+
+          // }
+          td {
+            font-weight: 500;
+            font-family: "Mulish";
+            border-radius: 4px;
+            padding: 4px;
+            margin-top: 1em;
+            height: 1.5rem;
+            .btn-contain{
+                background-color: azure;
+                padding:2px;
+                position: relative;
+                display: flex;
+                place-content: space-between;
+                border-radius: 12px;
+               .float{
+                    border-radius: 12px;
+                    position: absolute;
+                    content: '';
+                    height: 100%;
+                    width: 52%;
+                    background: green;
+                    top: 0;
+                    left: 0;
+                    // right: 0;
+                    transition: .3s ease-in-out;
+                    padding: 0 4px;
+                  }
+                  .floatOff{
+                    // right: 0;
+                    left: 34px;
+                    background: rgb(200, 6, 6);
+                  }
+                  .col1,.col2{
+                  transition: .3s ease-in-out;
+                    color: white;
+                }
+                .but{
+                    padding: 4px;
+                    border: none;
+                    text-transform: capitalize;
+                    font-family: "Mulish";
+                    font-weight: 500;
+                    cursor: pointer;
+                    z-index: 6;
+                }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

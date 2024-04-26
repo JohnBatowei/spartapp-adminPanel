@@ -1,0 +1,68 @@
+.signin {
+  border: 1px solid transparent;
+  border-color: mix(green, transparent, 20%);
+  display: flex;
+  flex-direction: column;
+  // place-content: center;
+  align-items:center;
+  height: 99vh;
+  .message{
+    position:absolute;
+    // height: fit-content;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid red;
+    background: pink;
+    color: #000000;
+    font-size: 19px;
+    transition: 0.3s ease;
+    top: -900px;
+    // &:hover{
+      //   top:10px
+      // }
+    }
+    .greenM{
+    transition: 0.3s ease;
+    top: 12px
+  }
+  form:hover~.message{
+      top:12px
+  }
+  form {
+    margin-top: 8em;
+    input,button{
+        font-family: 'Mulish';
+        font-size: 25px;
+        padding: 3px 16px 6px 16px;
+        border: 1px solid transparent;
+        border-color: mix(blue,transparent,20%);
+        border-radius: 5px;
+        outline: none;
+    }
+       button{
+        background: rgb(11, 11, 96);
+        color: white;
+        &:hover{
+            background: rgba(11, 11, 96, 0.874);
+
+        }
+       }
+    h3 {
+      font-family: "Mulish";
+      color: mix(#000000, navy);
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .container {
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+  }
+}

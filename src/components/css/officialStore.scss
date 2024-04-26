@@ -1,0 +1,347 @@
+.officialStore{
+  font-family: 'Mulish';
+
+    .createForm{
+        label{
+            font-family: 'Mulish';
+        }
+        input{
+            outline:none;
+            // font-style:italic;
+            font-family: 'Mulish';
+            padding: 2px 4px;
+          }
+        }
+       .main{
+        display: flex;
+        // border: 1px solid red;
+        padding: 1.4rem 0;
+        width: 100%;
+        gap: .9em;
+
+
+        .storeProductTable{
+          width: 33rem;
+          margin-top: 4rem;
+          height: fit-content;
+          // border: 1px solid red;
+          .searchProduct{
+            display: flex;
+            place-content: space-between;
+            margin-bottom: 6px;
+            label{
+              text-transform:capitalize;
+              // text-decoration: underline;
+              border-bottom: 2px solid red;
+            }
+            input{
+              outline: none;
+              padding: 4px;
+
+              border: 1px solid grey;
+              &:focus{
+                border-color: steelblue;
+              }
+            }
+          }
+          .productTable{
+            width: 100%;
+            border-collapse: collapse;
+            tr{
+              height: 12px;
+          }
+    
+          th, td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+            // font-family: 'Mulish';
+            position: relative;
+
+            img{
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+              object-position: center;
+              right: 0;
+              top: 0;
+            }
+           
+          }
+          .actions{
+            button{
+              padding: 4px 5px;
+              text-transform:capitalize;
+              display: inline-block;
+              margin: 0 .1rem;
+              border-radius: 1px;
+              cursor: pointer;
+                  background-color: rgba(68, 90, 117, 0.856);
+                  border: 1px solid rgb(66, 61, 61);
+                  color: white;
+                  &:hover{
+                    background-color: red;
+                  }
+                
+              
+            }
+          }
+          .edit-container{
+            td{
+              form{
+                display: flex;
+                place-content: space-between;
+                flex-direction: column;
+                
+                .pNameEdit{
+                  // border: 1px solid red;
+                  display: flex;
+                  place-content: space-between;
+                  align-items: center;
+                  // flex-direction: column;
+                  
+                 margin: 6px 0;
+                 button{
+                   cursor: pointer;
+                   margin: 0 auto;
+                 }
+                 .tie{
+                   // border: 1px solid red;
+                   flex-basis: 50%;
+                   input{
+                     padding: 3px;
+                     outline: none;
+                   }
+                 }
+                }
+              }
+           
+            }
+          }
+        }
+        .pagination {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+    
+          button {
+            margin: 0 5px;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+    
+            &:disabled {
+              background-color: #ccc;
+              cursor: not-allowed;
+            }
+          }
+        }
+        }
+
+
+
+        .field {
+          // margin: 20px 0;
+          width: 33rem;
+          // background-color: red;
+          
+          .search{
+          display: flex;
+            place-content: end;
+            gap: .4em;
+            margin-bottom: 5px;
+            input{
+              outline: none;
+              padding: 4px;
+
+              border: 1px solid grey;
+              &:focus{
+                border-color: steelblue;
+              }
+            }
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            tr{
+                height: 12px;
+            }
+      
+            th, td {
+              border: 1px solid #ddd;
+              padding: 8px;
+              text-align: left;
+              font-family: 'Mulish';
+              button{
+                padding: 4px 5px;
+                text-transform:capitalize;
+              }
+            }
+            td{
+              // width: 4em;
+        height: 2em;
+        position: relative;
+        text-transform: capitalize;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            object-fit: cover;
+            object-position: center;
+          }
+     }
+            th {
+              background-color: #f2f2f2;
+            }
+      
+            tr:nth-child(even) {
+              background-color: #f2f2f2;
+            }
+      
+            tr:hover {
+              background-color: #e2e2e2;
+            }
+
+            tbody{
+              .actions{
+                // display: flex;
+                // place-content: space-between;
+                button{
+                  margin: 0 1px;
+                  cursor: pointer;
+                  background-color: steelblue;
+                  border: 1px solid rgb(66, 61, 61);
+                  color: white;
+                  border-radius: 1px;
+                  &:hover{
+                    background-color: red;
+                  }
+                }
+              }
+              .productField{
+                background-color: #ffffff;
+                height: fit-content;
+                p{
+                  font-family: 'Mulish';
+                  text-transform: capitalize;
+                  color: steelblue;
+                }
+                
+                form{
+                //  border: 1px solid red;
+                 display: inline-block;
+                //  place-content: space-between;
+                //  flex-direction: column;
+                gap: 12px;
+                 .create-product{
+                  display: flex;
+                  flex-direction: column;
+                  gap: .5em;
+                  // border: 1px solid red;
+                  margin: 0 5px;
+                  input{
+                    padding: 5px;
+                    outline: none;
+                    font-family: 'Mulish';
+                  }
+                  div{
+                    // display: flex;
+                  }
+                }
+              .first{
+                float: left;
+              }
+                .btn-btn{
+                  // border: 1px solid red;
+                  button{
+                    font-family: 'Mulish';
+                    // margin-top: .5em;
+                   padding: 6px;
+                   cursor: pointer;
+                  }
+                }
+               }
+               
+              }
+            }
+          }
+          .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+      
+            button {
+              margin: 0 5px;
+              padding: 8px 12px;
+              background-color: #007bff;
+              color: #fff;
+              border: none;
+              cursor: pointer;
+      
+              &:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+              }
+            }
+          }
+    }
+       }
+    
+    .error-message{
+        font-family: 'Mulish';
+        border: 1px solid tomato;
+        background: pink;
+        padding: 5px 12px;
+        border-radius: 5px;
+    }
+    .success{
+        background: lightgreen;
+        border: 1px solid green;
+    }
+    form{
+        display:flex;
+        place-content: space-between;
+        align-items: center;
+        input,button{
+            text-transform: capitalize;
+            padding: 5px 12px;
+        }
+        button{
+            cursor:pointer;
+        }
+        .upload{
+            display:flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 3em;
+            label{
+                color: #000000;
+                // color: red;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+        }
+        .viewImage{
+            width: 20em;
+            height: 10em;
+            border: 1px solid rgba(0, 128, 0, 0.136);
+            position: relative;
+            border-radius: 5px;
+            img{
+                border-radius: 5px;
+                position:absolute;
+                height: 100%;
+                width:100%;
+                object-fit: cover;
+                object-position: center center;
+                // top: -1em;
+            }
+        }
+    }
+}

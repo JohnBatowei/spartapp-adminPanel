@@ -1,0 +1,37 @@
+.es-message{
+  // border:1px solid red;
+  // width:24rem;
+  position: absolute;
+  z-index:777;
+  top: -8em;
+  transition: .3s ease-in-out;
+  left:30rem;
+  .gen{
+       font-family: 'Mulish';
+        width: fit-content;
+        padding: 12px;
+        border-radius: 5px;
+        color: #000000;
+        font-size: 17px;
+        transition: 0.3s ease;
+        top: -900px;
+        display: flex;
+        
+        }
+        .ss{
+          // top: .1em;
+          border: 1px solid green;
+          background: rgb(162, 252, 162);
+        }
+      .ee{
+        // top: .1em;
+          border: 1px solid red;
+          background: pink;
+      }
+      
+      
+    }
+    .override{
+      top: .1em;
+      transition: .3s ease-in-out;
+    }

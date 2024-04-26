@@ -1,0 +1,65 @@
+.aside-bar {
+  position: sticky;
+  font-family: "Mulish";
+  background: mix(#000000, rgb(8, 8, 37));
+  flex-basis: 20%;
+  top: 0;
+  right:0;
+  overflow-y: scroll;
+  height: 100vh;
+  //   padding: 1px;
+    // position: fixed;
+  .img {
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    gap: 12px;
+    background: black;
+    padding: 6px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 1.5em;
+    h2 {
+      // font-style: italic;
+      font-family: 'Mulish';
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+    img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      object-position: center;
+      border: none;
+        // border-radius: 5px;
+    }
+  }
+
+  .scrollable-aside {
+    border-radius: 5px;
+    width: 100%;
+    overflow-wrap: break-word;
+    scrollbar-color: steelblue;
+    
+    .box {
+      font-family: "Mulish";
+      color: #ffffff;
+      padding: 3px 8px;
+      margin: 5px 0;
+      text-transform: capitalize;
+      font-weight: 500;
+      text-decoration: none;
+      display: block;
+      &:hover {
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+      }
+    }
+    .active {
+      background: #fff;
+      color: #000;
+    }
+  }
+}
